@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Simple Form Element Usage</title>
@@ -24,8 +24,8 @@
             <label for="fullname">Name:</label>
             <input type="text" placeholder="Your full name" id="fullname" name="fullname" required />
             <br><label for="gender">Gender:</label>
-            <input for="male" type="radio" id="male" name="male" required>Male
-            <input for="female" type="radio" id="female" name="female" required>Female
+            <input for="male" type="radio" id="male" name="male" aria-label="Male" required>Male
+            <input for="female" type="radio" id="female" name="female"  aria-label="Female" required>Female
             <br><label>Age:</label><input aria-label="name" placeholder="18" name="age" type="number" required />
             <br><label for="dob">Date of Birth:</label><input type="date" placeholder="dd/mm/yy" id="dob" name="dob" />
             <br> <label for="color">Favourite Color:</label>
@@ -54,7 +54,7 @@
             </fieldset>
             <fieldset>
                  <legend>Method to Contact You:</legend>
-                  <div class="contact"><label for="email">Email:</label><input aria-label="email" id="email" type="checkbox" name="email">
+                  <div class="contact">
            <label for="Phone Call">Phone Number:</label><input aria-label="phone" type="checkbox" id="phone" name="phone">
            <label for="Text Message">Text Message:</label><input aria-label="text message" type="checkbox" id="text-message" name="text-message">
         </div>
