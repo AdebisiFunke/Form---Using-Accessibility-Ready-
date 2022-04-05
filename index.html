@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Simple Form Element Usage</title>
-    <meta name="description" content="Simple Form Element Usage">
-     <meta name="keywords" content="Form Elements">
-     <meta name="author" content="Funke Adebisi">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-    <h1>Simple Form Elements Usage</h1>
-    <form action="#" method="post" enctype="multipart/form-data">
-        <fieldset>
+   <head>
+      <meta charset="utf-8" />
+      <title>Simple Form Element Usage</title>
+      <meta name="description" content="Simple Form Element Usage">
+      <meta name="keywords" content="Form Elements">
+      <meta name="author" content="Funke Adebisi">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <h1>Simple Form Elements Usage</h1>
+      <form action="#" method="post" enctype="multipart/form-data">
+         <fieldset>
             <legend>Upload Image</legend>
             <label for="your_image">Your image:</label>
             <input id="your_image" type="file" name="file_upload" required />
-           
-         
-        </fieldset>
-        <fieldset>
+         </fieldset>
+         <fieldset>
             <legend>Your General Details</legend>
             <label for="fullname">Name:</label>
             <input type="text" placeholder="Your full name" id="fullname" name="fullname" required />
@@ -30,37 +28,37 @@
             <br><label for="dob">Date of Birth:</label><input type="date" placeholder="dd/mm/yy" id="dob" name="dob" />
             <br> <label for="color">Favourite Color:</label>
             <input type="color" id="color" name="color" />
-            <br> <label for="country">Which Country:</label><select id="country">
-                <option>No Selection</option>
-                <option>USA</option>
-                <option>France</option>
-                <option>Canada</option>
-                <option>Australia</option>
-                <option>Japan</option>
+            <br> <label for="country">Which Country:</label>
+            <select id="country">
+               <option>No Selection</option>
+               <option>USA</option>
+               <option>France</option>
+               <option>Canada</option>
+               <option>Australia</option>
+               <option>Japan</option>
             </select>
-        </fieldset>
-        <fieldset>
+         </fieldset>
+         <fieldset>
             <legend>Your Indicators</legend>
             <label for="height">Height:</label><span class="span1">Short</span><input id="height" type="range" min="0" max="100" name="height" /><span class="span1">Tall</span>
             <br>   <label for="salary">Salary:</label><span class="span1">Poor</span><input id="salary" type="range" min="0" max="100" name="salary" /><span class="span1">Rich</span>
-        </fieldset>
-        <fieldset>
+         </fieldset>
+         <fieldset>
             <legend>Your Contact Information</legend>
             <label for="email">Email:</label><input id="email" type="email" name="email" required /><br>
             <label for="mobile">Mobile:</label><input id="mobile" type="tel" name="mobile"  required/><br>
             <label for="address">Address:</label>
             <textarea rows="5" cols="50" id="address" name="address">
             </textarea>
-            </fieldset>
-            <fieldset>
-                 <legend>Method to Contact You:</legend>
-                  <div class="contact">
-           <label for="Phone Call">Phone Number:</label><input aria-label="phone" type="checkbox" id="phone" name="phone">
-           <label for="Text Message">Text Message:</label><input aria-label="text message" type="checkbox" id="text-message" name="text-message">
-        </div>
-            </fieldset>
-        <input aria-label="submit" type="submit" name="submit" />
-    </form>
-</body>
+         </fieldset>
+         <fieldset>
+            <legend>Method to Contact You:</legend>
+            <div class="contact">
+               <label for="Phone Call">Phone Number:</label><input aria-label="phone" type="checkbox" id="phone" name="phone">
+               <label for="Text Message">Text Message:</label><input aria-label="text message" type="checkbox" id="text-message" name="text-message">
+            </div>
+         </fieldset>
+         <input aria-label="submit" type="submit" name="submit" />
+      </form>
+   </body>
 </html>
-
